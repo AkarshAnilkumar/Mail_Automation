@@ -1,2 +1,2 @@
 # Mail_Automation
-A mail automation system implemented using Django
+A mass mail system implemented using Django
