@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <form action="/sendMail" method='POST' style="margin:100px">
+        {% csrf_token %}
+        <div class="container" style="display:grid;">
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter name" name="name" id="name" style="height:20px;">
+
+            <br><br><label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email" name="email" id="email" style="height:20px;">
+
+            <br><br><label for="msg"><b>Message</b></label>
+            <textarea type="text" placeholder="Message" name="msg" id="msg" style="height:80px;font-family: sans-serif;padding-inline: 3px;"></textarea>
+
+            <br><br><button type="submit" class="submitbtn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
